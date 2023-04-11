@@ -164,9 +164,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project feel free to frok it and use it as you need.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,6 +181,6 @@ I would like to thank Microverse for the information provided to build this proj
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT) licensed.
+This project is [MIT](https://github.com/MMGGYY66/school-library/blob/oop-school/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
