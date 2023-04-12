@@ -1,4 +1,4 @@
-require_relative './Nameable'
+require_relative './name_able'
 
 class Decorator < Nameable
   attr_accessor :nameable
