@@ -33,8 +33,6 @@
 
 # 📖 [school-library] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[school-library]** is a a Ruby app that allows teachers & students to manage school libraries and book rentals .
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -52,14 +50,14 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="">N/A</a></li>
+    <li><a href="">ROR</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>N/A</li>
+    <li>POSTGRESSQL</li>
   </ul>
 </details>
 
@@ -119,7 +117,8 @@ ruby student.rb
 To run the project tests, execute the following command:
 
 ```
-N/A
+rspec spec
+
 ```
 
 
