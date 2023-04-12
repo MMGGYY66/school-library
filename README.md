@@ -50,15 +50,15 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="">ROR</a></li>
+    <li><a href="https://rubyonrails.org/">ROR</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>POSTGRESSQL</li>
-  </ul>
+<li><a href="https://www.postgresql.org">PostgreSQL</a><li>  
+</ul>
 </details>
 
 <!-- Features -->
