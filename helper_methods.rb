@@ -87,7 +87,7 @@ module LoadData
       if data != ''
         JSON.parse(data).map do |person|
           if person['json_class'] == 'Student'
-            student = Student.new(person['classroom'], person['age'], person['name'])
+            student = Student.new(person['classroom'], person['age'], person['name'], person['parent_permission'])
             student.id = person['id']
             people << student
           else

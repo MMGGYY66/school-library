@@ -81,8 +81,8 @@ class App
     print 'Has parent\'s permission? [Y/N]: '
     parent_permission = gets.chomp.downcase == 'y'
 
-    student_item = Student.new(classroom, age, name, parent_permission)
-    people << student_item
+    student = Student.new(classroom, age, name, parent_permission)    
+    people << student
     save_people
     puts
     puts 'Student created successfully'
@@ -97,8 +97,10 @@ class App
 
     print 'Specialization: '
     specialization = gets.chomp.split.map(&:capitalize).join(' ')
+    print 'Has parent\'s permission? [Y/N]: '
+    parent_permission = gets.chomp.downcase == 'y'
 
-    teacher_item = Teacher.new(age, specialization, name)
+    teacher_item = Teacher.new(age, specialization, name, parent_permission)
     people << teacher_item
     save_people
     puts
