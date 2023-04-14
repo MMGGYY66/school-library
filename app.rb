@@ -81,7 +81,7 @@ class App
     print 'Has parent\'s permission? [Y/N]: '
     parent_permission = gets.chomp.downcase == 'y'
 
-    student = Student.new(classroom, age, name, parent_permission)    
+    student = Student.new(classroom, age, name, parent_permission)
     people << student
     save_people
     puts
