@@ -4,7 +4,7 @@ class Student < Person
   attr_reader :classroom, :json_class
 
   def initialize(classroom, age, name, parent_permission, json_class: 'Student')
-    super(age, name, parent_permission:)
+    super(age, name, parent_permission: parent_permission)
     @classroom = classroom
     @json_class = json_class
   end

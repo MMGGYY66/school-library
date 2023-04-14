@@ -13,5 +13,20 @@
     "age": "55",
     "json_class": "Teacher",
     "specialization": "Sder"
+  },
+  {
+    "id": 96,
+    "name": "Yahya",
+    "age": "16",
+    "json_class": "Student",
+    "classroom": "9",
+    "parent_permission": true
+  },
+  {
+    "id": 352,
+    "name": "Gigi",
+    "age": "45",
+    "json_class": "Teacher",
+    "specialization": "Arabic"
   }
 ]

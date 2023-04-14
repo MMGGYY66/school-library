@@ -91,7 +91,7 @@ module LoadData
             student.id = person['id']
             people << student
           else
-            teacher = Teacher.new(person['age'], person['specialization'], person['name'])
+            teacher = Teacher.new(person['age'], person['specialization'], person['name'], person['parent_permission'])
             teacher.id = person['id']
             people << teacher
           end
@@ -109,12 +109,12 @@ module LoadData
     rental_data = JSON.parse(file.read)
     rental_data.each do |rental|
       if rental['json_class'] == 'Teacher'
-        teacher = Teacher.new(rental['age'], rental['specialization'], rental['name'])
+        teacher = Teacher.new(rental['age'], rental['specialization'], rental['name'], rental['parent_permission'])
         teacher.id = rental['id']
         book = Book.new(rental['title'], rental['author'])
         new_rental = Rental.new(rental['date'], book, teacher)
       else
-        student = Student.new(rental['classroom'], rental['age'], rental['name'])
+        student = Student.new(rental['classroom'], rental['age'], rental['name'], rental['parent_permission'])
         student.id = rental['id']
         book = Book.new(rental['title'], rental['author'])
         new_rental = Rental.new(rental['date'], book, student)
