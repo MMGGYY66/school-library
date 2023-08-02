@@ -1,4 +1,6 @@
-require_relative '../data_files/student'
+# require_relative '../data_files/student'
+
+require_relative 'student'
 
 class Classroom
   attr_accessor :name, :students, :label

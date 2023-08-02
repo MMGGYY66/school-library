@@ -1,3 +1,4 @@
+require 'rspec'
 require_relative '../data_files/student'
 require_relative '../data_files/classroom'
 

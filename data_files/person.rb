@@ -1,13 +1,14 @@
 require_relative '../data_files/nameable'
 require_relative '../data_files/rental'
-
 require_relative '../data_files/book'
 require_relative '../data_files/classroom'
 
-class Person < Nameable
-  attr_reader :id
-  attr_accessor :name, :age, :rentals
+# require_relative 'nameable'
+# require_relative 'rental'
+# require_relative 'book'
+# require_relative 'classroom'
 
+class Person < Nameable
   def initialize(age, _parent_permission, name = 'Unknown')
     super()
     @id = Random.rand(1..25)
@@ -16,6 +17,8 @@ class Person < Nameable
     @parent_permission = true
     @rentals = []
   end
+  attr_reader :id
+  attr_accessor :name, :age, :rentals
 
   def rent_book(book, date)
     rental = Rental.new(date, self, book)
