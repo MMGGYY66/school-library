@@ -1,5 +1,3 @@
-# require_relative '../data_files/person'
-# require_relative '../data_files/nameable'
 require_relative '../decorator'
 require_relative '../person'
 
