@@ -1,35 +1,19 @@
-require_relative '../data_files/person'
-require_relative '../data_files/nameable'
+# require_relative '../data_files/person'
+# require_relative '../data_files/nameable'
+require_relative '../decorator'
+require_relative '../person'
 
-describe Person::CapitalizeDecorator do
-  let(:person) { Person.new(25, true, 'john smith') }
-  let(:decorated_person) { Person::CapitalizeDecorator.new(person) }
-
-  it 'returns the correct name' do
-    expect(decorated_person.correct_name).to eq('John smith')
+describe Decorator do
+  person = Person.new(25, 'maximilianus')
+  it 'teats base decorator' do
+    expect(person.correct_name).to eql('maximilianus')
   end
-end
-describe Person::TrimmerDecorator do
-  let(:person) { Person.new(25, true, 'john smith ss') }
-  let(:decorated_person_sliced) { Person::TrimmerDecorator.new(person) }
-
-  it 'returns the correct name' do
-    expect(decorated_person_sliced.correct_name).to eq('john smith')
+  it 'tests the capitalization decorator' do
+    capitalized_person = CapitalizeDecorator.new(person)
+    expect(capitalized_person.correct_name).to eql('Maximilianus')
   end
-end
-describe Person::CapitalizeDecorator do
-  let(:person) { Person.new(25, true, 'john smith') }
-  let(:decorated_person) { Person::CapitalizeDecorator.new(person) }
-
-  it 'returns the correct name' do
-    expect(decorated_person.correct_name).to eq('John smith')
-  end
-end
-describe Person::TrimmerDecorator do
-  let(:person) { Person.new(25, true, 'john smith ss') }
-  let(:decorated_person_sliced) { Person::TrimmerDecorator.new(person) }
-
-  it 'returns the correct name' do
-    expect(decorated_person_sliced.correct_name).to eq('john smith')
+  it 'tests the trimmed decorator' do
+    trimmed_person = TrimmerDecorator.new(person)
+    expect(trimmed_person.correct_name).to eql('maximilian')
   end
 end
