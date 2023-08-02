@@ -1,5 +1,5 @@
-require_relative './helper_methods'
-require_relative './app'
+require_relative 'helper_methods'
+require_relative 'app'
 
 class Run
   include SaveData

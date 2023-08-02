@@ -1,6 +1,6 @@
-require_relative './name_able'
-require_relative './trimmer_decorator'
-require_relative './capital_decorator'
+require_relative 'name_able'
+require_relative 'trimmer_decorator'
+require_relative 'capital_decorator'
 require './rental'
 
 class Person < Nameable
