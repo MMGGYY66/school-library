@@ -43,5 +43,13 @@
     "age": "66",
     "json_class": "Teacher",
     "specialization": "Eng"
+  },
+  {
+    "id": 783,
+    "name": "Ss",
+    "age": "55",
+    "json_class": "Student",
+    "classroom": "Y",
+    "parent_permission": true
   }
 ]

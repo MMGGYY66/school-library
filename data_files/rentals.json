@@ -26,7 +26,17 @@
     "id": 273,
     "name": "Mm",
     "age": "66",
+    "type": "Student",
+    "classroom": null
+  },
+  {
+    "date": "7/7/2007",
+    "title": "Gg",
+    "author": "Ff",
+    "id": 194,
+    "name": "Hgf",
+    "age": "55",
     "type": "Teacher",
-    "specialization": "Eng"
+    "specialization": "Sder"
   }
 ]
